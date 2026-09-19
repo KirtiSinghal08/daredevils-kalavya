@@ -1,7 +1,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import {
   ArrowDown, ArrowRight, BadgeIndianRupee, Building2, Camera, Check,
-  ChevronRight, ImageSparkles, Languages, MessageSquareMore, Mic2,
+  ChevronRight, Images, Languages, MessageSquareMore, Mic2,
   PackageCheck, ShoppingBag, Sparkles, Star, Store, TrendingUp, Users,
 } from "lucide-react";
 import potteryVase from "../assets/pottery-vase.png";
@@ -32,7 +32,7 @@ const problems = [
 
 const features = [
   { icon: Mic2, title: "AI Smart Cataloguing", text: "Upload an image and speak. AI shapes it into a structured, professional listing.", step: "Image + voice → catalogue" },
-  { icon: ImageSparkles, title: "AI Product Enhancement", text: "Improve presentation and create polished, marketplace-ready product visuals.", step: "Raw image → ready to showcase" },
+  { icon: Images, title: "AI Product Enhancement", text: "Improve presentation and create polished, marketplace-ready product visuals.", step: "Raw image → ready to showcase" },
   { icon: BadgeIndianRupee, title: "Dynamic Pricing Assistant", text: "Bring material cost, inflation, seasonality, and market conditions into one recommendation.", step: "AI suggests → artisan approves" },
   { icon: Building2, title: "B2B Market Linkage", text: "Connect artisans with businesses seeking bulk and customized products.", step: "Discover → connect → source" },
   { icon: MessageSquareMore, title: "B2B Negotiation", text: "Keep requests, artisan responses, negotiation, and final price in one clear flow.", step: "RFQ → negotiate → order" },
