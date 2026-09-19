@@ -19,6 +19,8 @@
  */
 
 @theme inline {
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -59,29 +61,41 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-surface: var(--surface);
+  --color-screen: var(--screen);
+  --color-phone: var(--phone);
+  --color-pattern: var(--pattern);
+  --shadow-soft: 0 12px 35px oklch(0.2 0.02 250 / 0.12);
+  --shadow-phone: 0 28px 60px oklch(0.18 0.02 250 / 0.28), inset 0 0 0 2px oklch(0.75 0.01 250);
+  --shadow-glow: 0 12px 28px oklch(0.68 0.18 28 / 0.3);
+  --drop-shadow-piece: 0 8px 5px oklch(0.25 0.03 250 / 0.16);
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.5rem;
+  --background: oklch(0.965 0.008 255);
+  --foreground: oklch(0.24 0.03 286);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
+  --primary: oklch(0.67 0.2 30);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.82 0.13 184);
+  --secondary-foreground: oklch(0.24 0.03 286);
+  --muted: oklch(0.94 0.012 255);
+  --muted-foreground: oklch(0.47 0.025 270);
   --accent: oklch(0.968 0.007 247.896);
   --accent-foreground: oklch(0.208 0.042 265.755);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.88 0.018 255);
+  --input: oklch(0.88 0.018 255);
+  --ring: oklch(0.67 0.2 30);
+  --surface: oklch(0.99 0.004 255);
+  --screen: oklch(0.985 0.012 196);
+  --phone: oklch(0.12 0.012 260);
+  --pattern: oklch(0.62 0.06 190);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +154,41 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow: hidden;
   }
+}
+
+@utility bg-paper {
+  background-image: radial-gradient(circle at 20% 20%, oklch(1 0 0 / 0.7) 0 1px, transparent 1px), radial-gradient(circle at 80% 60%, oklch(0.5 0.02 250 / 0.08) 0 1px, transparent 1px);
+  background-size: 4px 4px, 5px 5px;
+}
+
+@utility text-gradient {
+  background: linear-gradient(90deg, oklch(0.65 0.22 20), oklch(0.78 0.17 67));
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 800px) {
+  main { min-height: 560px; }
+  main > header { inset-inline: 1rem; top: 1rem; height: 3.75rem; padding-inline: 0.75rem; }
+  main > header nav a { padding-inline: 0.85rem; }
+  main > section {
+    grid-template-columns: minmax(0, 0.9fr) minmax(86px, 0.7fr) minmax(0, 1fr);
+    gap: 0.6rem;
+    padding: 5.5rem 0.75rem 0;
+  }
+  main > section h1 { font-size: clamp(2.1rem, 11vw, 3.25rem); }
+  main > section > div:first-child > p:first-child { font-size: 0.52rem; letter-spacing: 0.1em; }
+  main > section > div:first-child > p:last-child { margin-top: 1rem; font-size: 0.62rem; line-height: 1rem; }
+  main > section > div:last-child { padding-left: 0; }
+  main > section > div:last-child > p { font-size: 0.66rem; line-height: 1rem; }
+  main > section > div:last-child > div { margin-top: 1rem; font-size: 0.58rem; gap: 0.35rem; }
+  main > section > div:last-child > div > span { width: 1.7rem; height: 1.7rem; }
+  .phone-shell { height: min(47vh, 400px); border-width: 5px; border-radius: 2rem; padding: 0.3rem; }
+  .phone-shell > div { border-radius: 1.55rem; padding: 0.6rem; }
+  .phone-shell p { font-size: 0.65rem; line-height: 1rem; }
+  .phone-shell p + p { font-size: 0.5rem; line-height: 0.75rem; }
+  .phone-shell div > span { width: 2.8rem; height: 2.8rem; }
 }
