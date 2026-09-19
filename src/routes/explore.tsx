@@ -45,7 +45,7 @@ function ExploreHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-xl">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link to="/" className="flex items-center gap-3" aria-label="Kalavya home">
-          <span className="grid size-10 place-items-center rounded-full bg-primary font-display text-xl font-bold text-primary-foreground">K</span>
+          <img src="/icon-512x512.png" alt="Kalavya Icon" className="size-10 rounded-full" />
           <span className="font-display text-lg font-bold">Kalavya</span>
         </Link>
         <nav className="flex items-center gap-1 rounded-full bg-muted p-1 text-sm font-medium">

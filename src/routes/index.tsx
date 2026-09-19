@@ -23,7 +23,7 @@ function SiteHeader() {
   return (
     <header className="site-header absolute inset-x-[6%] top-5 z-40 flex h-16 items-center justify-between rounded-full border border-border/70 bg-surface/85 px-5 shadow-soft backdrop-blur-xl">
       <Link to="/" className="flex items-center gap-3" aria-label="Kalavya home">
-        <span className="brand-mark grid size-10 place-items-center rounded-full bg-primary font-display text-xl font-bold text-primary-foreground">K</span>
+        <img src="/icon-512x512.png" alt="Kalavya Icon" className="brand-mark size-10 rounded-full" />
         <span className="font-display text-lg font-bold text-foreground">Kalavya</span>
       </Link>
       <nav className="flex items-center gap-1 rounded-full bg-muted/80 p-1 text-sm font-medium" aria-label="Main navigation">
@@ -40,24 +40,14 @@ function RealisticPhone() {
       <div className="phone-button phone-button-volume" />
       <div className="phone-button phone-button-power" />
       <div className="phone-frame relative h-[min(69vh,640px)] aspect-[9/19.2] rounded-[3.25rem] border border-phone-highlight bg-phone p-[9px] shadow-phone">
-        <div className="absolute left-1/2 top-3 z-30 flex h-7 w-28 -translate-x-1/2 items-center justify-end gap-2 rounded-full bg-phone px-3">
-          <span className="size-2 rounded-full bg-phone-lens" />
-        </div>
-        <div className="relative flex h-full overflow-hidden rounded-[2.65rem] bg-screen">
-          <div className="absolute inset-x-5 top-3 z-20 flex items-center justify-between text-[0.6rem] font-semibold text-foreground">
-            <span>9:41</span>
-            <span className="flex items-center gap-1"><Signal className="size-3"/><Wifi className="size-3"/><BatteryFull className="size-3.5"/></span>
-          </div>
-          <div className="absolute inset-0 bg-phone-pattern" />
-          <div className="relative m-auto w-full px-6 text-center">
-            <p className="mb-4 text-[0.58rem] font-semibold uppercase text-primary">A film by Team Daredevils</p>
-            <span className="phone-play mx-auto grid size-20 place-items-center rounded-full bg-primary text-primary-foreground shadow-glow">
-              <Play className="ml-1 size-8 fill-current" aria-hidden="true" />
-            </span>
-            <h2 className="mt-6 font-display text-2xl font-normal italic leading-tight text-foreground">Craft has a voice.<br/>We help it travel.</h2>
-            <p className="mx-auto mt-3 max-w-44 text-xs leading-5 text-muted-foreground">The KALAVYA story is coming soon.</p>
-          </div>
-          <div className="absolute inset-x-6 bottom-5 h-1 rounded-full bg-foreground/80" />
+        <div className="relative flex h-full overflow-hidden rounded-[2.65rem] bg-black">
+          <iframe
+            className="absolute inset-0 z-10 h-full w-full border-0 pointer-events-auto"
+            src="https://www.youtube.com/embed/y6oMutwJQCw?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&cc_load_policy=0&fs=0&loop=1&playlist=y6oMutwJQCw"
+            title="Phone preview"
+            allow="autoplay; encrypted-media"
+            aria-hidden="true"
+          />
         </div>
       </div>
     </div>
@@ -95,10 +85,16 @@ function HomePage() {
             Heritage in every hand. <span className="text-muted-foreground">Opportunity in every connection.</span>
           </h2>
           <p className="mt-5 max-w-xs text-sm font-light leading-6 text-muted-foreground">KALAVYA helps artisans digitize, showcase, price, connect, sell, and grow—with technology that respects the craft.</p>
-          <Link to="/explore" className="group mt-7 inline-flex items-center gap-5 text-xs font-semibold uppercase text-foreground">
-            Start exploring
-            <span className="grid size-12 place-items-center rounded-full bg-foreground text-background transition-transform duration-300 group-hover:translate-x-1"><ArrowRight className="size-4" /></span>
-          </Link>
+          <div className="mt-7 flex gap-5">
+            <Link to="/explore" className="group inline-flex items-center gap-3 text-xs font-semibold uppercase text-foreground">
+              Explore
+              <span className="grid size-8 place-items-center rounded-full bg-foreground text-background transition-transform duration-300 group-hover:translate-x-1"><ArrowRight className="size-4" /></span>
+            </Link>
+            <a href="https://artisans-ai.vercel.app/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 text-xs font-semibold uppercase text-foreground">
+              Download
+              <span className="grid size-8 place-items-center rounded-full bg-foreground text-background transition-transform duration-300 group-hover:translate-x-1"><ArrowRight className="size-4" /></span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
