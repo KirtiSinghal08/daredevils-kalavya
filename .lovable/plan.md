@@ -5,7 +5,7 @@
 - Replace the reference branding with “Team Daredevil presents KALAVYA” and generate original pottery, vase, shawl, murti, and artifact illustrations in a cohesive cutout style.
 - Put a YouTube-ready video area inside the phone. Until a link is supplied, show a polished “Video coming soon” state without inventing a URL.
 - Add a separate fixed-screen About page listing Ishita Babbar (Team Leader), Kirti Singhal, Harshit Singhal, Jatin Singhal, Vidit Chauhan, and Venkata.
-- Keep Explore, Plan Trip, Merchandise, Community, About, and Demo in the top navigation; About opens the team page.
+- Keep only Explore and About in the top navigation; About opens the separate team page.
 
 ## Technical details
 - Implement the two pages at `/` and `/about` using TanStack Router.
