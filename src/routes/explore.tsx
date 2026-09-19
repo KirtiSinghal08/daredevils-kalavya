@@ -176,7 +176,7 @@ function ExplorePage() {
           </div>
         </section>
       </div>
-      <footer className="border-t border-border px-5 py-8 text-center text-xs text-muted-foreground">Team Daredevil presents <span className="font-display font-bold text-foreground">KALAVYA</span></footer>
+      <footer className="border-t border-border px-5 py-8 text-center text-xs text-muted-foreground">Team Daredevils presents <span className="font-display font-bold text-foreground">KALAVYA</span></footer>
     </main>
   );
 }

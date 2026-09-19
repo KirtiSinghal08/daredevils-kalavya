@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Kalavya" },
       { name: "description", content: "Indian craft, its makers, and their stories." },
-      { name: "author", content: "Team Daredevil" },
+      { name: "author", content: "Team Daredevils" },
       { property: "og:title", content: "Kalavya" },
       { property: "og:description", content: "Indian craft, its makers, and their stories." },
       { property: "og:type", content: "website" },
