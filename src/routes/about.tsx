@@ -39,12 +39,12 @@ function AboutPage() {
             <span className="font-display text-xl font-bold">Kalavya</span>
           </Link>
           <nav className="flex items-center gap-1 rounded-full bg-muted p-1 text-sm font-semibold">
-            <Link to="/" className="rounded-full px-5 py-2 text-muted-foreground">Explore</Link>
+            <Link to="/explore" className="rounded-full px-5 py-2 text-muted-foreground">Explore</Link>
             <Link to="/about" className="rounded-full bg-primary px-5 py-2 text-primary-foreground shadow-sm">About</Link>
           </nav>
         </header>
         <section className="flex min-h-0 flex-1 flex-col justify-center py-7">
-          <Link to="/" className="mb-4 inline-flex w-fit items-center gap-2 text-sm font-bold text-primary"><ArrowLeft className="size-4" /> Back to Explore</Link>
+          <Link to="/explore" className="mb-4 inline-flex w-fit items-center gap-2 text-sm font-bold text-primary"><ArrowLeft className="size-4" /> Back to Explore</Link>
           <div className="mb-6">
             <p className="font-display text-sm font-bold uppercase tracking-[0.18em] text-primary">The people behind Kalavya</p>
             <h1 className="mt-2 font-display text-[clamp(3rem,6vw,6rem)] font-black leading-none text-foreground">TEAM DAREDEVIL</h1>
