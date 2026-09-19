@@ -91,7 +91,7 @@ function HomePage() {
               <span className="grid size-8 place-items-center rounded-full bg-foreground text-background transition-transform duration-300 group-hover:translate-x-1"><ArrowRight className="size-4" /></span>
             </Link>
             <a href="https://artisans-ai.vercel.app/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-3 text-xs font-semibold uppercase text-foreground">
-              Download
+              PROTOTYPE
               <span className="grid size-8 place-items-center rounded-full bg-foreground text-background transition-transform duration-300 group-hover:translate-x-1"><ArrowRight className="size-4" /></span>
             </a>
           </div>
