@@ -1,26 +1,24 @@
-# Kalavya Showcase
+KALAVYA — Video Showcase
+🎥 Project Demo
 
-This is the reference file, reference photo for my website. Generate exactly the same. Just do the few changes. Only this web page should come. And in the top section, like it's written Explore, Plan Trip, Merchandise, Community, About, Demo. Only add one thing, About. In the About section there would be the details of our team members, which is, yeah. And in this, the reference file, no scrolling should come. Only the phone and the other elements should be viewed. So it is for just reference, so do the respective changes, that Team Daredevil presents Kalavya, and instead of these monuments and temples photo, replace it with the artisans' products, like pottery items, vases, shawls, Murti, artifacts, etc. And in these, mobile phone should come in the center. In it we'll place a YouTube link video. And at the right-hand side, write a small description about our project, which I will give you. And in the About, just there should be another web page for it. No scrolling should come, only this thing. In the About section, write the details of the team members - Ishita Babbar Team Leader, Kirti Singhal, Harshit Singhal, Jatin Singhal, Vidit Chauhan, Venkata
+KALAVYA is an AI-driven market linkage and smart cataloging mobile application designed to empower marginalized artisans with easier access to digital commerce.
 
-This project was built with [Lovable](https://lovable.dev).
+What the Video Showcases
+
+The demo highlights KALAVYA's core user journey:
+
+Artisan → Product Digitization → AI Assistance → Marketplace → Customer/B2B Buyer → Order
+
+Key Features Demonstrated
+📸 AI Smart Cataloguing — Upload a product image and describe it through voice to generate a product catalog.
+💰 Dynamic Pricing Assistant — Price recommendations based on raw-material cost, inflation, seasonality, and market conditions, with artisan approval.
+🤝 B2B Market Linkage — Businesses can discover artisans and raise RFQs for bulk or customized requirements.
+💬 B2B Negotiation — Buyers and artisans can negotiate according to the specific order.
+⭐ Reputation-Based Discovery — Ratings and feedback contribute to an artisan's digital reputation and profile visibility.
+🛍️ Customer Marketplace — Customers can discover and purchase authentic handcrafted products.
+📊 Artisan Dashboard — Centralized management of products, orders, and business activity.
+
+This project was built with LOVE & CARE.
 
 **Live app**: https://daredevils-kalavya.lovable.app
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/b5ce33d9-f275-439e-8320-aec980958807).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
