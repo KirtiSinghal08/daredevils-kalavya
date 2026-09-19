@@ -19,11 +19,11 @@ export const Route = createFileRoute("/about")({
 
 const team = [
   { name: "Ishita Babbar", role: "Team Leader", initials: "IB" },
-  { name: "Kirti Singhal", role: "Team Member", initials: "KS" },
-  { name: "Harshit Singhal", role: "Team Member", initials: "HS" },
-  { name: "Jatin Singhal", role: "Team Member", initials: "JS" },
-  { name: "Vidit Chauhan", role: "Team Member", initials: "VC" },
-  { name: "Venkata", role: "Team Member", initials: "V" },
+  { name: "Kirti Singhal", role: "Frontend Developer", initials: "KS" },
+  { name: "Harshit Singhal", role: "Backend Developer", initials: "HS" },
+  { name: "Jatin Singhal", role: "QA/Testing", initials: "JS" },
+  { name: "Vidit Chauhan", role: "-- ", initials: "VC" },
+  { name: "Venkata Rammana Reddy", role: "--", initials: "V" },
 ];
 
 function AboutPage() {
@@ -35,7 +35,7 @@ function AboutPage() {
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col">
         <header className="flex h-16 shrink-0 items-center justify-between rounded-full border border-border/60 bg-surface/90 px-5 shadow-soft backdrop-blur-md">
           <Link to="/" className="flex items-center gap-3" aria-label="Back to Kalavya">
-            <span className="grid size-10 place-items-center rounded-full bg-primary text-xl font-black text-primary-foreground">K</span>
+            <img src="/icon-512x512.png" alt="Kalavya Icon" className="size-10 rounded-full" />
             <span className="font-display text-xl font-bold">Kalavya</span>
           </Link>
           <nav className="flex items-center gap-1 rounded-full bg-muted p-1 text-sm font-semibold">
@@ -52,7 +52,7 @@ function AboutPage() {
           <div className="grid grid-cols-3 gap-3 lg:gap-4">
             {team.map((member, index) => (
               <article key={member.name} className="flex min-h-32 items-center gap-4 rounded-lg border border-border bg-surface/90 p-4 shadow-soft backdrop-blur-sm">
-                <span className={`grid size-14 shrink-0 place-items-center rounded-full font-display text-lg font-black ${index === 0 ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground"}`}>{member.initials}</span>
+                <span className="grid size-14 shrink-0 place-items-center bg-secondary rounded-full font-display text-lg text-white">{member.initials}</span>
                 <div>
                   <h2 className="font-display text-lg font-bold text-foreground">{member.name}</h2>
                   <p className="mt-1 text-sm font-medium text-muted-foreground">{member.role}</p>

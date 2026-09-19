@@ -181,7 +181,6 @@
 .craft-shawl { --craft-rotate: 6deg; animation-delay: -1.4s; }
 .craft-bowl { --craft-rotate: 3deg; animation-delay: -3s; }
 .craft-elephant { --craft-rotate: -6deg; animation-delay: -4.2s; }
-.phone-frame { animation: phone-breathe 6s ease-in-out infinite; }
 .phone-play { animation: soft-pulse 3s ease-in-out infinite; }
 .phone-button { position: absolute; z-index: 0; width: 3px; border-radius: 3px; background: var(--phone-highlight); }
 .phone-button-volume { left: -3px; top: 25%; height: 72px; }
