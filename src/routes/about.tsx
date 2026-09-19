@@ -6,9 +6,9 @@ import woodenElephant from "../assets/wooden-elephant.png";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Meet Team Daredevil — Kalavya" },
-      { name: "description", content: "Meet the six-member Team Daredevil behind Kalavya." },
-      { property: "og:title", content: "Meet Team Daredevil — Kalavya" },
+      { title: "Meet Team Daredevils — Kalavya" },
+      { name: "description", content: "Meet the six-member Team Daredevils behind Kalavya." },
+      { property: "og:title", content: "Meet Team Daredevils — Kalavya" },
       { property: "og:description", content: "The people creating Kalavya and celebrating India's artisan communities." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -47,7 +47,7 @@ function AboutPage() {
           <Link to="/explore" className="mb-4 inline-flex w-fit items-center gap-2 text-sm font-bold text-primary"><ArrowLeft className="size-4" /> Back to Explore</Link>
           <div className="mb-6">
             <p className="font-display text-sm font-bold uppercase tracking-[0.18em] text-primary">The people behind Kalavya</p>
-            <h1 className="mt-2 font-display text-[clamp(3rem,6vw,6rem)] font-black leading-none text-foreground">TEAM DAREDEVIL</h1>
+            <h1 className="mt-2 font-display text-[clamp(3rem,6vw,6rem)] font-black leading-none text-foreground">TEAM DAREDEVILS</h1>
           </div>
           <div className="grid grid-cols-3 gap-3 lg:gap-4">
             {team.map((member, index) => (

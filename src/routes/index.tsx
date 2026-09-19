@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
       { title: "Kalavya — Preserving the Human Touch" },
       { name: "description", content: "KALAVYA connects India's artisans with digital markets through an approachable AI-powered business ecosystem." },
       { property: "og:title", content: "Kalavya — Preserving the Human Touch" },
-      { property: "og:description", content: "A digital bridge between India's artisan heritage and wider markets, presented by Team Daredevil." },
+      { property: "og:description", content: "A digital bridge between India's artisan heritage and wider markets, presented by Team Daredevils." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -50,7 +50,7 @@ function RealisticPhone() {
           </div>
           <div className="absolute inset-0 bg-phone-pattern" />
           <div className="relative m-auto w-full px-6 text-center">
-            <p className="mb-4 text-[0.58rem] font-semibold uppercase text-primary">A film by Team Daredevil</p>
+            <p className="mb-4 text-[0.58rem] font-semibold uppercase text-primary">A film by Team Daredevils</p>
             <span className="phone-play mx-auto grid size-20 place-items-center rounded-full bg-primary text-primary-foreground shadow-glow">
               <Play className="ml-1 size-8 fill-current" aria-hidden="true" />
             </span>
@@ -80,7 +80,7 @@ function HomePage() {
 
       <section className="relative z-20 grid h-full grid-cols-[1fr_minmax(250px,0.8fr)_1fr] items-center gap-10 px-[8%] pt-24">
         <div className="home-intro self-center">
-          <p className="mb-5 text-xs font-medium uppercase text-muted-foreground">Team Daredevil presents</p>
+          <p className="mb-5 text-xs font-medium uppercase text-muted-foreground">Team Daredevils presents</p>
           <h1 className="font-display text-[clamp(4rem,7.4vw,8.5rem)] font-normal italic leading-[0.84] text-foreground">Kalavya</h1>
           <div className="mt-7 flex items-center gap-3">
             <span className="h-px w-12 bg-primary" />
