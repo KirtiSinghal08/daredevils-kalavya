@@ -39,15 +39,16 @@ function RealisticPhone() {
     <div className="phone-wrap relative z-20 mx-auto">
       <div className="phone-button phone-button-volume" />
       <div className="phone-button phone-button-power" />
-      <div className="phone-frame relative h-[min(69vh,640px)] aspect-[9/19.2] rounded-[3.25rem] border border-phone-highlight bg-phone p-[9px] shadow-phone">
+      <div className="phone-frame relative h-[min(85vh,800px)] aspect-[9/19.2] rounded-[3.25rem] border border-phone-highlight bg-phone shadow-phone">
         <div className="relative flex h-full overflow-hidden rounded-[2.65rem] bg-black">
           <iframe
             className="absolute inset-0 z-10 h-full w-full border-0 pointer-events-auto"
-            src="https://www.youtube.com/embed/y6oMutwJQCw?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&cc_load_policy=0&fs=0&loop=1&playlist=y6oMutwJQCw"
-            title="Phone preview"
-            allow="autoplay; encrypted-media"
-            aria-hidden="true"
-          />
+            src="https://www.youtube.com/embed/efO1PHWkpXs"
+            title="SIH26090"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen></iframe>
         </div>
       </div>
     </div>
