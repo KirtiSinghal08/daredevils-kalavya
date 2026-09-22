@@ -22,8 +22,8 @@ const team = [
   { name: "Kirti Singhal", role: "Frontend Developer", initials: "KS" },
   { name: "Harshit Singhal", role: "Backend Developer", initials: "HS" },
   { name: "Jatin Singhal", role: "QA/Testing", initials: "JS" },
-  { name: "Vidit Chauhan", role: "-- ", initials: "VC" },
-  { name: "Venkata Rammana Reddy", role: "--", initials: "V" },
+  { name: "Vidit Chauhan", role: "Database Manager", initials: "VC" },
+  { name: "Venkata Rammana Reddy", role: "Research & Integration", initials: "V" },
 ];
 
 function AboutPage() {
