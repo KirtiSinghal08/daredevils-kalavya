@@ -43,7 +43,7 @@ function RealisticPhone() {
         <div className="relative flex h-full overflow-hidden rounded-[2.65rem] bg-black">
           <iframe
             className="absolute inset-0 z-10 h-full w-full border-0 pointer-events-auto"
-            src="https://www.youtube.com/embed/zxwr8TclmWA"
+            src="https://youtube.com/shorts/KEvQxwC4RwQ"
             title="SIH26090"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
