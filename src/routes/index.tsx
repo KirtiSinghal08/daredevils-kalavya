@@ -43,12 +43,8 @@ function RealisticPhone() {
         <div className="relative flex h-full overflow-hidden rounded-[2.65rem] bg-black">
           <iframe
             className="absolute inset-0 z-10 h-full w-full border-0 pointer-events-auto"
-            src="https://youtube.com/shorts/KEvQxwC4RwQ"
-            title="SIH26090"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen></iframe>
+            src="https://www.youtube.com/embed/KEvQxwC4RwQ"
+            title="Al Driven Market Linkage and Smart Cataloging Mobile Application For Artisans | Team Daredevils" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
       </div>
     </div>
